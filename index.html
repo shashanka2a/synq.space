@@ -3,221 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synq Space - Seamless Networking</title>
-    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Synq.space - Seamless Contact Sharing</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        .bg-primary { background-color: #4F46E5; }
-        .text-primary { color: #4F46E5; }
-        .bg-accent { background-color: #3B82F6; }
-        .text-accent { color: #3B82F6; }
-        .hover\:bg-accent:hover { background-color: #3B82F6; }
-        .hover\:text-accent:hover { color: #3B82F6; }
-        .rounded-full { border-radius: 9999px; }
-        .sticky-nav { position: sticky; top: 0; z-index: 50; transition: background-color 0.3s; }
-        .scrolled { background-color: #3B82F6; }
-        .scrolled .nav-link { color: #FFFFFF; }
+        /* Custom styles */
+        .bg-custom-teal {
+            background-color: #20ADC1;
+        }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-    <!-- Header -->
-    <header id="navbar" class="bg-primary text-white shadow sticky-nav">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold">Synq Space</a>
-            <nav class="hidden md:flex space-x-6">
-                <a href="#" class="nav-link hover:text-accent">Home</a>
-                <a href="#" class="nav-link hover:text-accent">Features</a>
-                <a href="#" class="nav-link hover:text-accent">Pricing</a>
-                <a href="#" class="nav-link hover:text-accent">About</a>
-                <a href="#" class="nav-link hover:text-accent">Contact</a>
-            </nav>
-            <div class="flex space-x-4">
-                <a href="#" class="btn-signup bg-accent text-white px-4 py-2 rounded-full hover:bg-primary">Sign Up</a>
-                <a href="#" class="btn-login bg-white text-primary px-4 py-2 rounded-full hover:bg-gray-200">Log In</a>
-            </div>
-        </div>
-    </header>
+<body class="bg-gray-100">
 
     <!-- Hero Section -->
-    <section class="bg-primary text-white py-20">
+    <section class="bg-custom-teal text-white py-20">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl font-bold mb-4">Seamless Networking, Simplified</h1>
-            <p class="text-lg mb-8">Effortlessly sync and manage your professional contacts with Synq Space.</p>
-            <a href="#" class="bg-white text-primary px-6 py-3 rounded-full hover:bg-gray-200">Get Started for Free</a>
-            <img src="hero-image.png" alt="Hero Image" class="mt-8 mx-auto w-full h-auto">
+            <h1 class="text-5xl font-bold mb-4">Synq.space</h1>
+            <p class="text-xl mb-8">Seamlessly share and receive contact information with a single tap.</p>
+            <a href="#features" class="bg-white text-custom-teal font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+                Learn More
+            </a>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="bg-gray-100 py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-12">Why Choose Synq Space?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="feature-card">
-                    <img src="sync-icon.png" alt="Sync Contacts" class="mx-auto mb-4">
-                    <h3 class="text-xl font-bold mb-2">Sync Contacts</h3>
-                    <p>Instantly sync your contacts across devices with a single tap.</p>
-                </div>
-                <div class="feature-card">
-                    <img src="manage-icon.png" alt="Manage Spaces" class="mx-auto mb-4">
-                    <h3 class="text-xl font-bold mb-2">Manage Spaces</h3>
-                    <p>Organize your professional connections effortlessly.</p>
-                </div>
-                <div class="feature-card">
-                    <img src="secure-icon.png" alt="Secure Sharing" class="mx-auto mb-4">
-                    <h3 class="text-xl font-bold mb-2">Secure Sharing</h3>
-                    <p>End-to-end encryption ensures your data stays private.</p>
-                </div>
-                <div class="feature-card">
-                    <img src="cross-platform-icon.png" alt="Cross-Platform Compatibility" class="mx-auto mb-4">
-                    <h3 class="text-xl font-bold mb-2">Cross-Platform Compatibility</h3>
-                    <p>Works seamlessly across all major operating systems.</p>
-                </div>
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800">Why Choose Synq.space?</h2>
+                <p class="text-xl text-gray-600 mt-4">Because connecting with others should be effortless.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="bg-accent text-white py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-12">How Synq Space Works</h2>
-            <div class="flex flex-col items-center">
-                <div class="step flex items-center mb-12">
-                    <div class="step-icon bg-white text-primary rounded-full w-12 h-12 flex items-center justify-center mr-4">1</div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Step 1</h3>
-                        <p>Download the app and create your profile.</p>
+            <div class="flex flex-wrap -mx-6">
+                <div class="w-full md:w-1/3 px-6 mb-12">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                        <div class="mb-6">
+                            <svg class="w-12 h-12 text-custom-teal mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422A12.083 12.083 0 0112 20.1a12.083 12.083 0 01-6.16-9.522L12 14z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Instant Sharing</h3>
+                        <p class="text-gray-600">Exchange contact information instantly with a simple tap, no more delays or missed connections.</p>
                     </div>
                 </div>
-                <div class="step flex items-center mb-12">
-                    <div class="step-icon bg-white text-primary rounded-full w-12 h-12 flex items-center justify-center mr-4">2</div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Step 2</h3>
-                        <p>Sync your contacts using Bluetooth.</p>
+                <div class="w-full md:w-1/3 px-6 mb-12">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                        <div class="mb-6">
+                            <svg class="w-12 h-12 text-custom-teal mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h12M9 6h12M9 18h12M3 14h12m0 0l-3-3m3 3l-3 3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Privacy First</h3>
+                        <p class="text-gray-600">You control what information is shared, ensuring your privacy is always protected.</p>
                     </div>
                 </div>
-                <div class="step flex items-center mb-12">
-                    <div class="step-icon bg-white text-primary rounded-full w-12 h-12 flex items-center justify-center mr-4">3</div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Step 3</h3>
-                        <p>Manage your contacts in customized Spaces.</p>
-                    </div>
-                </div>
-                <div class="step flex items-center">
-                    <div class="step-icon bg-white text-primary rounded-full w-12 h-12 flex items-center justify-center mr-4">4</div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Step 4</h3>
-                        <p>Share your professional information securely.</p>
+                <div class="w-full md:w-1/3 px-6 mb-12">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                        <div class="mb-6">
+                            <svg class="w-12 h-12 text-custom-teal mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-6l-3-3M5 12H3m3 6h2m-2 0H3m6-6h2m-2 0H3m6 6h2m-2 0H3m6-6h2m-2 0H3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Seamless Integration</h3>
+                        <p class="text-gray-600">Works across all platforms, ensuring you can connect with anyone, anywhere.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section class="bg-white py-20">
+    <!-- Call to Action Section -->
+    <section class="py-20 bg-custom-teal text-white">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-12 text-gray-800">Choose Your Plan</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="pricing-card p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg transition-shadow">
-                    <h3 class="text-2xl font-bold mb-4">Basic</h3>
-                    <p class="text-4xl font-bold mb-4">$0/month</p>
-                    <ul class="text-left mb-6">
-                        <li class="mb-2">Sync Contacts</li>
-                        <li class="mb-2">Basic Sharing</li>
-                        <li class="mb-2">Cross-Platform Support</li>
-                    </ul>
-                    <a href="#" class="bg-primary text-white px-6 py-3 rounded-full hover:bg-accent">Sign Up</a>
-                </div>
-                <div class="pricing-card p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg transition-shadow">
-                    <h3 class="text-2xl font-bold mb-4">Pro</h3>
-                    <p class="text-4xl font-bold mb-4">$9.99/month</p>
-                    <ul class="text-left mb-6">
-                        <li class="mb-2">All Basic Features</li>
-                        <li class="mb-2">Advanced Sync</li>
-                        <li class="mb-2">Priority Support</li>
-                    </ul>
-                    <a href="#" class="bg-primary text-white px-6 py-3 rounded-full hover:bg-accent">Sign Up</a>
-                </div>
-                <div class="pricing-card p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg transition-shadow">
-                    <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
-                    <p class="text-4xl font-bold mb-4">Contact Us</p>
-                    <ul class="text-left mb-6">
-                        <li class="mb-2">All Pro Features</li>
-                        <It seems the process was interrupted. I'll provide the remaining HTML and JavaScript for the Pricing and Footer sections, focusing on ensuring the page is interactive and visually appealing.
-
-### Pricing and Footer Sections with JS
-
-Here’s the rest of the code:
-
-```html
-    <!-- Pricing Section -->
-    <section class="bg-white py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-12 text-gray-800">Choose Your Plan</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="pricing-card p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg transition-shadow">
-                    <h3 class="text-2xl font-bold mb-4">Basic</h3>
-                    <p class="text-4xl font-bold mb-4">$0/month</p>
-                    <ul class="text-left mb-6">
-                        <li class="mb-2">Sync Contacts</li>
-                        <li class="mb-2">Basic Sharing</li>
-                        <li class="mb-2">Cross-Platform Support</li>
-                    </ul>
-                    <a href="#" class="bg-primary text-white px-6 py-3 rounded-full hover:bg-accent">Sign Up</a>
-                </div>
-                <div class="pricing-card p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg transition-shadow">
-                    <h3 class="text-2xl font-bold mb-4">Pro</h3>
-                    <p class="text-4xl font-bold mb-4">$9.99/month</p>
-                    <ul class="text-left mb-6">
-                        <li class="mb-2">All Basic Features</li>
-                        <li class="mb-2">Advanced Sync</li>
-                        <li class="mb-2">Priority Support</li>
-                    </ul>
-                    <a href="#" class="bg-primary text-white px-6 py-3 rounded-full hover:bg-accent">Sign Up</a>
-                </div>
-                <div class="pricing-card p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg transition-shadow">
-                    <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
-                    <p class="text-4xl font-bold mb-4">Contact Us</p>
-                    <ul class="text-left mb-6">
-                        <li class="mb-2">All Pro Features</li>
-                        <li class="mb-2">Custom Integration</li>
-                        <li class="mb-2">Dedicated Support</li>
-                    </ul>
-                    <a href="#" class="bg-primary text-white px-6 py-3 rounded-full hover:bg-accent">Contact Us</a>
-                </div>
-            </div>
+            <h2 class="text-4xl font-bold mb-6">Ready to Connect?</h2>
+            <p class="text-xl mb-8">Join thousands of users who are already using Synq.space to build meaningful connections.</p>
+            <a href="#" class="bg-white text-custom-teal font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+                Get Started Now
+            </a>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-primary text-white py-10">
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-6">
         <div class="container mx-auto px-6 text-center">
-            <img src="logo-white.png" alt="Synq Space Logo" class="mx-auto mb-4">
-            <p class="mb-4">Simplifying professional networking for everyone.</p>
-            <ul class="flex justify-center space-x-4 mb-6">
-                <li><a href="#" class="hover:text-accent">Privacy Policy</a></li>
-                <li><a href="#" class="hover:text-accent">Terms of Service</a></li>
-                <li><a href="#" class="hover:text-accent">Contact Us</a></li>
-            </ul>
-            <p>© 2024 Synq Space. All rights reserved.</p>
+            <p>&copy; 2024 Synq.space. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // JavaScript for sticky navbar
-        window.onscroll = function() {stickyNavbar()};
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function stickyNavbar() {
-            if (window.pageYOffset > sticky) {
-                navbar.classList.add("scrolled");
-            } else {
-                navbar.classList.remove("scrolled");
-            }
-        }
-
-        // Optional: JS for pricing card animations or hover effects can be added here
+        // Add any interactivity if needed
     </script>
 </body>
 </html>
